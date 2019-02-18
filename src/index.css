@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url(./assets/fonts/ProximaNovaRegular.WOFF);
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(./assets/fonts/ProximaNovaLight.WOFF);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url(./assets/fonts/ProximaNovaBold.WOFF);
+  font-weight: 600;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +23,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.667rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
