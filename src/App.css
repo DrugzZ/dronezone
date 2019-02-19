@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
-  padding: 2rem 15vw;
+  padding: 2rem 10vw;
   width: 100%;
 }
 
@@ -42,11 +42,9 @@
 }
 
 .hero-section__content {
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 40vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 32.5vh;
 }
 
 .hero-section__slogan {
@@ -73,8 +71,63 @@
   font-size: inherit;
 }
 
+.main-button__icon {
+  padding-right: 1rem;
+}
+
 .main-button--transparent {
+  padding: 1rem 2rem;
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.main-button--blue {
+  margin: 0 1rem 4rem 1rem;
+  background: linear-gradient(45deg, #264699 0%, #667db7 100%);
+  color: white;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.scroll-icon__icon {
+  margin: 1rem;
+}
+
+.scroll-icon__text {
+  font-size: 14px;
+}
+
+/* Icons Section */
+.icons-section {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 0 10vw;
+}
+
+.icons-block {
+  display: flex;
+  color: #5e6372;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.icon-block {
+  padding: 4rem 0;
+}
+
+.icon-block__title {
+  font-size: 1.67rem;
+  background: linear-gradient(51deg, #cb0035 20%, #e06900 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
