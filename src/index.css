@@ -41,7 +41,8 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-p {
+p,
+h1 {
   margin: 0;
 }
 
