@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import MapComponent from "./components/MapComponent/MapComponent";
+
 import MouseIcon from "./assets/media/mouse_icon.png";
 import DroneIcon from "./assets/media/drone_icon.png";
 import DroneTopIcon from "./assets/media/drone1_icon.png";
@@ -222,6 +224,14 @@ class App extends Component {
               Send
             </button>
           </form>
+        </section>
+        <section className="map-section">
+          <MapComponent />
+        </section>
+        <section className="footer-section">
+          <h2 style={{ color: "black", textAlign: "center", height: "200px" }}>
+            This is the footer section
+          </h2>
         </section>
       </div>
     );
