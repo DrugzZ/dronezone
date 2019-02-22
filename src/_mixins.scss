@@ -1,0 +1,10 @@
+@mixin title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@mixin text-gradient {
+  background: $warm-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

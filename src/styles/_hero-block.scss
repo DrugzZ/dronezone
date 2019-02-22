@@ -1,0 +1,38 @@
+.hero-block {
+  height: 100vh;
+  background-image: url(./assets/media/header_bg.png),
+    url(./assets/media/header_bg.png),
+    linear-gradient(51deg, #cb0035 20%, #e06900 80%);
+  background-blend-mode: soft-light;
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &__wrap {
+    position: relative;
+    text-align: center;
+    top: 32.5vh;
+  }
+
+  &__promo {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__subtitle {
+    opacity: 0.4;
+  }
+
+  &__buttons {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    margin: 1rem;
+    color: #d32721;
+    background: white;
+  }
+}

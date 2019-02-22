@@ -1,0 +1,21 @@
+.icons-block {
+  background-color: $light-grey;
+  text-align: center;
+  padding: 0 10vw;
+
+  &__wrap {
+    display: flex;
+    color: $subtitle-color;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__item {
+    padding: 4rem 0;
+  }
+
+  &__title {
+    font-size: 1.67rem;
+    @include text-gradient;
+  }
+}

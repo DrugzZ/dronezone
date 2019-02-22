@@ -1,0 +1,29 @@
+.button {
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  border-radius: 50px;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  font-family: "ProximaNova";
+  font-size: inherit;
+
+  &__icon {
+    padding-right: 1rem;
+  }
+
+  &--withIcon {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  &--blue {
+    margin: 0 1rem 4rem 1rem;
+    background: linear-gradient(45deg, #264699 0%, #667db7 100%);
+    color: white;
+  }
+}
