@@ -1,17 +1,35 @@
 .hero-block {
   height: 100vh;
+  min-height: 600px;
   background-image: url(./assets/media/header_bg.png),
-    url(./assets/media/header_bg.png),
-    linear-gradient(51deg, #cb0035 20%, #e06900 80%);
+    url(./assets/media/header_bg.png), $warm-gradient;
   background-blend-mode: soft-light;
   background-position: center bottom;
-  background-size: contain;
+  background-size: 200%;
   background-repeat: no-repeat;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    background-image: $warm-gradient, url(./assets/media/header_bg.png),
+      url(./assets/media/header_bg.png);
+  }
+
+  @media (min-width: $screen-sm) {
+    background-size: 150%;
+  }
+
+  @media (min-width: $screen-md) {
+    background-size: 100%;
+  }
 
   &__wrap {
     position: relative;
     text-align: center;
-    top: 32.5vh;
+    top: 25%;
+    padding: 0 2rem;
+
+    @media (min-width: $screen-sm) {
+      top: 30%;
+    }
   }
 
   &__promo {
@@ -23,7 +41,8 @@
   }
 
   &__subtitle {
-    opacity: 0.4;
+    opacity: 0.5;
+    white-space: pre-wrap;
   }
 
   &__buttons {

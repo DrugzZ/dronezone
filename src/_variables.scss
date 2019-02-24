@@ -1,4 +1,15 @@
-$warm-gradient: linear-gradient(51deg, #cb0035 20%, #e06900 80%);
+$small-text: 0.88rem;
+$mid-text: 1.67rem;
+$large-text: 2.67rem;
 
+$warm-gradient: -webkit-linear-gradient(51deg, #cb0035 20%, #e06900 80%);
+
+$text-color: #fff;
 $subtitle-color: #5e6372;
+
 $light-grey: #f6f6f6;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;

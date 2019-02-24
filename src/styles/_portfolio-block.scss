@@ -1,0 +1,93 @@
+.portfolio-block {
+  color: $subtitle-color;
+  display: flex;
+  flex-direction: column;
+  background-color: $light-grey;
+
+  @media (max-width: $screen-lg) {
+    @include container-padding;
+  }
+
+  @media (min-width: $screen-sm) {
+    flex-flow: row wrap;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-weight: bold;
+
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    @include text-gradient;
+
+    @media (min-width: $screen-sm) {
+      white-space: nowrap;
+    }
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 2.5rem;
+      white-space: normal;
+    }
+  }
+
+  &__video {
+    position: relative;
+    align-self: center;
+
+    @media (min-width: $screen-md) {
+      padding: 2rem 2rem 2rem 1rem;
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 50%;
+    }
+  }
+
+  &__descr--bottom {
+    order: 4;
+    @media (min-width: $screen-md) {
+      order: 3;
+    }
+  }
+
+  &__video--bottom {
+    order: 3;
+    @media (min-width: $screen-md) {
+      order: 4;
+    }
+  }
+
+  &__descr {
+    text-align: justify;
+    @include container-padding-left;
+
+    @media (min-width: $screen-md) {
+      @include container-padding;
+      text-align: left;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: auto;
+
+    @media (min-width: $screen-md) {
+      align-self: start;
+      margin: initial;
+    }
+  }
+}

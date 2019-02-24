@@ -1,21 +1,32 @@
 .icons-block {
   background-color: $light-grey;
   text-align: center;
-  padding: 0 10vw;
+  @include container-padding;
 
   &__wrap {
-    display: flex;
     color: $subtitle-color;
-    justify-content: center;
-    align-items: baseline;
+    margin-bottom: 2rem;
+    @media (min-width: $screen-sm) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    padding: 4rem 0;
+    flex: 1 50%;
+    padding: 1rem;
+    @media (min-width: $screen-lg) {
+      flex: 1 25%;
+    }
   }
 
   &__title {
     font-size: 1.67rem;
+    font-weight: bold;
+    padding: 1rem;
     @include text-gradient;
+    white-space: nowrap;
   }
 }

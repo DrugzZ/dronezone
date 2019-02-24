@@ -1,5 +1,6 @@
 import React from "react";
 import MouseIcon from "../assets/media/mouse_icon.png";
+import PlayIcon from "../assets/media/play_icon.png";
 
 export default () => (
   <section className="hero-block">
@@ -14,9 +15,7 @@ export default () => (
       <div className="hero-block__buttons">
         <button className="button hero-block__btn">Ask for price</button>
         <button className="button button--withIcon">
-          <span role="img" aria-label="play" className="button__icon">
-            ▶️
-          </span>
+          <img src={PlayIcon} alt="Play Icon" className="button__icon" />
           Watch video
         </button>
       </div>

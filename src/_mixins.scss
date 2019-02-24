@@ -1,10 +1,47 @@
 @mixin title {
-  font-size: 3rem;
+  font: {
+    size: 2rem;
+    weight: bold;
+  }
+  @media (min-width: $screen-sm) {
+    font: {
+      size: 3rem;
+    }
+  }
   margin-bottom: 0.5rem;
 }
 
 @mixin text-gradient {
+  color: #cb0035;
   background: $warm-gradient;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@mixin container-padding {
+  padding: 2rem 1rem;
+
+  @media (min-width: $screen-sm) {
+    padding: 2rem 5vw;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 2rem 7vw;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 2rem 10vw;
+  }
+}
+
+@mixin container-padding-left {
+  padding: 2rem 1rem;
+
+  @media (min-width: $screen-lg) {
+    padding: 2rem 0 2rem 7vw;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 2rem 0 2rem 10vw;
+  }
 }

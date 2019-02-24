@@ -1,0 +1,13 @@
+.newsletter-block {
+  text-align: center;
+  background-image: url(./assets/media/newsletter_bgimg.jpg), $warm-gradient;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+  @include container-padding;
+
+  &__title {
+    @include title;
+    padding: 2rem 0;
+  }
+}

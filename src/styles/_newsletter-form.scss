@@ -1,0 +1,38 @@
+.newsletter-form {
+  margin-bottom: 2rem;
+
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    color: white;
+
+    &::placeholder {
+      color: white;
+      font-weight: 300;
+    }
+
+    @media (max-width: 420px) {
+      padding: 0.75rem 0 0.75rem 1.5rem;
+      margin: 2rem 0;
+    }
+  }
+
+  &__btn {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    background-color: white;
+    color: #d32721;
+    font-family: "ProximaNova";
+    font-size: 1rem;
+    border: 1px solid white;
+    margin-left: -2rem;
+    cursor: pointer;
+
+    @media (max-width: 380px) {
+      margin: 0;
+    }
+  }
+}
