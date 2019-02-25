@@ -15,6 +15,38 @@
   font-weight: 600;
 }
 
+@media print {
+  * {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  .main-nav {
+    display: initial !important;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+
+  .icons-block {
+    height: 100vh;
+  }
+
+  .info-block {
+    height: 100vh;
+  }
+
+  .portfolio-block {
+    height: 100vh;
+  }
+
+  .player,
+  .player__ctrl {
+    display: none;
+  }
+}
+
 body {
   font-family: "ProximaNova", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",

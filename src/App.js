@@ -19,11 +19,16 @@ class App extends Component {
         <InfoComponent />
         <PortfolioComponent />
         <NewsletterComponent />
-        <section className="map-block">
-          <MapComponent height="500" />
-        </section>
+        <MapComponent height="500" />
         <section className="footer-block">
-          <h2 style={{ color: "black", textAlign: "center", height: "200px" }}>
+          <h2
+            style={{
+              color: "black",
+              textAlign: "center",
+              height: "200px",
+              padding: "2rem"
+            }}
+          >
             This is the footer section
           </h2>
         </section>

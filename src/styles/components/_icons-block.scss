@@ -16,7 +16,10 @@
 
   &__item {
     flex: 1 50%;
-    padding: 1rem;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      padding: 0;
+    }
     @media (min-width: $screen-lg) {
       flex: 1 25%;
     }

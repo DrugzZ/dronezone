@@ -8,9 +8,9 @@
   background-size: 200%;
   background-repeat: no-repeat;
 
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    background-image: $warm-gradient, url(./assets/media/header_bg.png),
-      url(./assets/media/header_bg.png);
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    background-image: url(./assets/media/hero-bg-ie.jpg);
+    background-size: cover !important;
   }
 
   @media (min-width: $screen-sm) {

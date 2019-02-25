@@ -1,17 +1,18 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./settins.scss";
+@import "./styles/base/variables.scss";
+@import "./styles/base/mixins.scss";
+@import "./styles/base/generic.scss";
 
-@import "./styles/map-block.scss";
-@import "./styles/page-header.scss";
-@import "./styles/logo.scss";
-@import "./styles/main-nav.scss";
-@import "./styles/hero-block.scss";
-@import "./styles/button.scss";
-@import "./styles/scroll-icon.scss";
-@import "./styles/icons-block.scss";
-@import "./styles/info-block.scss";
-@import "./styles/portfolio-block.scss";
-@import "./styles/newsletter-block.scss";
-@import "./styles/newsletter-form.scss";
-@import "./styles/player.scss";
+@import "./styles/components/page-header.scss";
+@import "./styles/components/main-nav.scss";
+@import "./styles/components/hero-block.scss";
+@import "./styles/components/icons-block.scss";
+@import "./styles/components/info-block.scss";
+@import "./styles/components/portfolio-block.scss";
+@import "./styles/components/newsletter-block.scss";
+@import "./styles/components/map-block.scss";
+
+@import "./styles/objects/logo.scss";
+@import "./styles/objects/button.scss";
+@import "./styles/objects/scroll-icon.scss";
+@import "./styles/objects/newsletter-form.scss";
+@import "./styles/objects/player.scss";
