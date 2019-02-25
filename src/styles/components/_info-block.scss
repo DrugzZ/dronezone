@@ -152,11 +152,7 @@
       min-width: 3rem;
       padding: 0.65rem 0;
       text-align: center;
-      
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        display: block;
-        line-height: 0.5;
-      }
+      display: block;
     }
   }
 }
