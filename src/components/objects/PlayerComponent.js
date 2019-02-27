@@ -33,7 +33,7 @@ export default ({ poster, video }) => {
       onMouseEnter={() => playing && setControls(true)}
     >
       <video
-        preload="true"
+        preload="auto"
         onEnded={showPoster}
         src={video}
         poster={poster}
