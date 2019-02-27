@@ -1,12 +1,16 @@
 .player {
-  width: 100%;
-  margin-bottom: -5px;
+  position: relative;
 
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    max-width: 90vw;
+  &__video {
+    width: 100%;
+    margin-bottom: -5px;
 
-    @media (min-width: $screen-sm) {
-      width: 100%;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 90vw;
+
+      @media (min-width: $screen-sm) {
+        width: 100%;
+      }
     }
   }
 
@@ -22,16 +26,10 @@
     cursor: pointer;
     padding: 1rem 1.139rem;
 
-    @media (min-width: $screen-md) {
-      transform: translate(calc(-50% - 10px), -50%);
-
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        transform: translate(-50%, -50%);
+    &:active {
+      &:focus {
+        outline: none;
       }
-    }
-
-    @media (min-width: $screen-lg) {
-      transform: translate(-50%, -50%);
     }
   }
 
@@ -39,5 +37,11 @@
     width: 2.5rem;
     height: 2.5rem;
     padding-top: 3px;
+  }
+
+  &--focused {
+    &:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
   }
 }

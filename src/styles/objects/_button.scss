@@ -3,7 +3,6 @@
   border: none;
   text-decoration: none;
   border-radius: 50px;
-  line-height: 1;
   cursor: pointer;
   text-align: center;
 
@@ -16,13 +15,21 @@
 
   &--withIcon {
     padding: 0.7rem 2rem;
-    background-color: transparent;
     color: white;
-    border: 1px solid white;
   }
 
   &--blue {
     background: linear-gradient(45deg, #264699 0%, #667db7 100%);
     color: white;
+  }
+
+  &--primary {
+    color: #d32721;
+    background: white;
+  }
+
+  &--transparent {
+    border: 1px solid white;
+    background-color: transparent;
   }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 
+import BtnComponent from "./objects/BtnComponent";
+
 export default () => (
   <section className="newsletter-block">
     <h1 className="newsletter-block__title">Sign up for our newsletter</h1>
@@ -9,9 +11,13 @@ export default () => (
         placeholder="Email address"
         className="newsletter-form__input"
       />
-      <button type="submit" className="newsletter-form__btn">
+      <BtnComponent
+        type="submit"
+        mod="primary"
+        className="newsletter-form__btn"
+      >
         Send
-      </button>
+      </BtnComponent>
     </form>
   </section>
 );

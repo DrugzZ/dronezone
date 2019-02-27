@@ -1,6 +1,9 @@
 import React from "react";
+
 import MouseIcon from "../assets/media/mouse_icon.png";
 import PlayIcon from "../assets/media/play_icon.png";
+
+import BtnComponent from "./objects/BtnComponent";
 
 export default () => (
   <section className="hero-block">
@@ -13,11 +16,16 @@ export default () => (
         </p>
       </div>
       <div className="hero-block__buttons">
-        <button className="button hero-block__btn">Ask for price</button>
-        <button className="button button--withIcon">
-          <img src={PlayIcon} alt="Play Icon" className="button__icon" />
+        <BtnComponent mod="primary" className="hero-block__btn">
+          Ask for price
+        </BtnComponent>
+        <BtnComponent
+          icon={PlayIcon}
+          mod="transparent"
+          className="hero-block__btn"
+        >
           Watch video
-        </button>
+        </BtnComponent>
       </div>
     </div>
     <div className="scroll-icon">

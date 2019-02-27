@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import { Vector as VectorLayer } from "ol/layer.js";
@@ -11,8 +11,8 @@ import VectorSource from "ol/source/Vector.js";
 
 import PinIcon from "../assets/media/location-pin_icon.png";
 
-export default class MapComponent extends Component {
-  componentDidMount() {
+export default props => {
+  useEffect(() => {
     const pointOne = new Feature({
       geometry: new Point(fromLonLat([-74.077644, 40.728157]))
     });
@@ -63,13 +63,10 @@ export default class MapComponent extends Component {
     });
 
     map.on("pointermove", e => {
-      let hit = e.map.hasFeatureAtPixel(e.pixel);
+      let hit = e.map.hasFeatureAtPixel(e.pixel, { hitTolerance: 10 });
       map.getTargetElement().style.cursor = hit ? "pointer" : "";
     });
-  }
+  });
 
-  render() {
-    //height must be declared explicitly
-    return <section id="map" style={{ height: `${this.props.height}px` }} />;
-  }
-}
+  return <section id="map" style={{ height: `${props.height}px` }} />;
+};

@@ -1,5 +1,7 @@
 import React from "react";
 
+import BtnComponent from "./objects/BtnComponent";
+
 import DroneIcon from "../assets/media/drone_icon.png";
 import DroneTopIcon from "../assets/media/drone1_icon.png";
 import PropelerIcon from "../assets/media/propeler_icon.png";
@@ -44,9 +46,9 @@ export default () => {
   return (
     <section className="icons-block">
       <div className="icons-block__wrap">{blocks}</div>
-      <button className="button button--blue icons-block__btn">
+      <BtnComponent mod="blue" className="icons-block__btn">
         Ask for price
-      </button>
+      </BtnComponent>
     </section>
   );
 };
