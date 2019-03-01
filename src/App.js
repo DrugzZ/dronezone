@@ -8,6 +8,8 @@ import InfoComponent from "./components/InfoComponent";
 import PortfolioComponent from "./components/PortfolioComponent";
 import NewsletterComponent from "./components/NewsletterComponent";
 
+import { ReactComponent as Loading } from "./assets/media/loading.svg";
+
 const MapComponent = lazy(() => import("./components/MapComponent"));
 
 export default () => {
@@ -29,7 +31,7 @@ export default () => {
       <InfoComponent />
       <PortfolioComponent />
       <NewsletterComponent />
-      <Suspense fallback={<p>Loading</p>}>
+      <Suspense fallback={<Loading />}>
         {scrolled && <MapComponent height="500" />}
       </Suspense>
       <section className="footer-block">
